@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             materialCard1 = new ReaLTaiizor.Controls.MaterialCard();
-            pictureBox1 = new PictureBox();
             lbl = new Label();
+            pictureBox1 = new PictureBox();
             materialCard2 = new ReaLTaiizor.Controls.MaterialCard();
             label1 = new Label();
             pictureBox2 = new PictureBox();
@@ -64,6 +64,16 @@
             materialCard1.Padding = new Padding(14);
             materialCard1.Size = new Size(177, 264);
             materialCard1.TabIndex = 0;
+            materialCard1.Click += Aventuras_Click;
+            // 
+            // lbl
+            // 
+            lbl.Location = new Point(17, 163);
+            lbl.Name = "lbl";
+            lbl.Size = new Size(143, 100);
+            lbl.TabIndex = 2;
+            lbl.Text = "Monte Fuji - Japón Volcán\r\nicónico de Japón, \r\nrodeado de paisa jes naturales\r\n y considerado sagrado.";
+            lbl.Click += lbl_Click;
             // 
             // pictureBox1
             // 
@@ -74,15 +84,6 @@
             pictureBox1.Size = new Size(143, 134);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            // 
-            // lbl
-            // 
-            lbl.Location = new Point(17, 163);
-            lbl.Name = "lbl";
-            lbl.Size = new Size(143, 100);
-            lbl.TabIndex = 2;
-            lbl.Text = "Monte Fuji - Japón Volcán\r\nicónico de Japón, \r\nrodeado de paisa jes naturales\r\n y considerado sagrado.";
-            lbl.Click += lbl_Click;
             // 
             // materialCard2
             // 
@@ -196,6 +197,7 @@
             Controls.Add(materialCard1);
             Name = "FormInicio";
             Text = "FormInicio";
+            Load += FormInicio_Load;
             materialCard1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             materialCard2.ResumeLayout(false);
