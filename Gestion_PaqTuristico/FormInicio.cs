@@ -51,6 +51,46 @@ namespace Gestion_PaqTuristico
 
             //Identificar el lugar usar el nombre del panel
             string lugar = presionado.Name;
+
+            //Perpar las variables vacias
+
+            string descripcion = "";
+            string promociones = "";
+
+            Image fotoActual = ((PictureBox)presionado.Controls[0]).Image;
+
+            //  LA BASE DE DATOS FAKE (Para la demo)
+            // Aquí es donde en el futuro consultarás SQL. Por ahora, usaremos un Switch.
+            switch (lugar)
+            {
+                case "panelFuji": // Asegúrate de que este sea el NOMBRE de tu panel en las propiedades
+                    lugar = "Aventura en el Monte Fuji, Japón";
+                    descripcion = "Experimenta la majestuosidad del pico más alto de Japón. Incluye transporte desde Tokio, guía bilingüe, equipo de senderismo básico y hospedaje en Ryokan tradicional.";
+                    promociones = "💰 PROMO: ¡20% de descuento si reservas antes del verano! 💰";
+                    break;
+
+                case "panelAngkor": // Nombre de tu segundo panel
+                    lugar = "Angkor Wat - Camboya";
+                    descripcion = "Descubre los secretos de la antigua civilización Jemer en el complejo religioso más grande del mundo. Tour al amanecer incluido.";
+                    promociones = "PROMO: ¡Tercera noche gratis en hotel 5 estrellas! 🎁";
+                    break;
+                    // ... Agrega los otros casos para Lisboa y Guanajuato ...
+
+                    // INSTANCIAR LA NUEVA VENTANA Y PASARLE DATOS
+                    FormReservas frmR = new FormReservas();
+                    frmR.CargarDatosDelLugar(lugar, descripcion, fotoActual, promociones);
+
+                    var menuPrincipal = Application.OpenForms.OfType<FormMenuAdmin>().FirstOrDefault();
+
+                    if (menuPrincipal != null)
+                    {
+                        menuPrincipal.AbrirFormEnPanel(frmR);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró el menú principal abierto. Asegúrate de ponerle el nombre correcto en el código.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+            }
         }
     }
 }

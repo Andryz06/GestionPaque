@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            materialCard1 = new ReaLTaiizor.Controls.MaterialCard();
+            panelfuji = new ReaLTaiizor.Controls.MaterialCard();
             lbl = new Label();
             pictureBox1 = new PictureBox();
-            materialCard2 = new ReaLTaiizor.Controls.MaterialCard();
+            panelAmgkor = new ReaLTaiizor.Controls.MaterialCard();
             label1 = new Label();
             pictureBox2 = new PictureBox();
             materialCard3 = new ReaLTaiizor.Controls.MaterialCard();
@@ -40,9 +40,9 @@
             materialCard4 = new ReaLTaiizor.Controls.MaterialCard();
             label3 = new Label();
             pictureBox4 = new PictureBox();
-            materialCard1.SuspendLayout();
+            panelfuji.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            materialCard2.SuspendLayout();
+            panelAmgkor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             materialCard3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -50,21 +50,21 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // materialCard1
+            // panelfuji
             // 
-            materialCard1.BackColor = Color.FromArgb(255, 255, 255);
-            materialCard1.Controls.Add(lbl);
-            materialCard1.Controls.Add(pictureBox1);
-            materialCard1.Depth = 0;
-            materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard1.Location = new Point(103, 82);
-            materialCard1.Margin = new Padding(14);
-            materialCard1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialCard1.Name = "materialCard1";
-            materialCard1.Padding = new Padding(14);
-            materialCard1.Size = new Size(177, 264);
-            materialCard1.TabIndex = 0;
-            materialCard1.Click += Aventuras_Click;
+            panelfuji.BackColor = Color.FromArgb(255, 255, 255);
+            panelfuji.Controls.Add(lbl);
+            panelfuji.Controls.Add(pictureBox1);
+            panelfuji.Depth = 0;
+            panelfuji.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            panelfuji.Location = new Point(103, 82);
+            panelfuji.Margin = new Padding(14);
+            panelfuji.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            panelfuji.Name = "panelfuji";
+            panelfuji.Padding = new Padding(14);
+            panelfuji.Size = new Size(177, 264);
+            panelfuji.TabIndex = 0;
+            panelfuji.Click += Aventuras_Click;
             // 
             // lbl
             // 
@@ -85,20 +85,20 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // materialCard2
+            // panelAmgkor
             // 
-            materialCard2.BackColor = Color.FromArgb(255, 255, 255);
-            materialCard2.Controls.Add(label1);
-            materialCard2.Controls.Add(pictureBox2);
-            materialCard2.Depth = 0;
-            materialCard2.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard2.Location = new Point(322, 82);
-            materialCard2.Margin = new Padding(14);
-            materialCard2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialCard2.Name = "materialCard2";
-            materialCard2.Padding = new Padding(14);
-            materialCard2.Size = new Size(177, 264);
-            materialCard2.TabIndex = 1;
+            panelAmgkor.BackColor = Color.FromArgb(255, 255, 255);
+            panelAmgkor.Controls.Add(label1);
+            panelAmgkor.Controls.Add(pictureBox2);
+            panelAmgkor.Depth = 0;
+            panelAmgkor.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            panelAmgkor.Location = new Point(322, 82);
+            panelAmgkor.Margin = new Padding(14);
+            panelAmgkor.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            panelAmgkor.Name = "panelAmgkor";
+            panelAmgkor.Padding = new Padding(14);
+            panelAmgkor.Size = new Size(177, 264);
+            panelAmgkor.TabIndex = 1;
             // 
             // label1
             // 
@@ -193,14 +193,14 @@
             ClientSize = new Size(967, 606);
             Controls.Add(materialCard4);
             Controls.Add(materialCard3);
-            Controls.Add(materialCard2);
-            Controls.Add(materialCard1);
+            Controls.Add(panelAmgkor);
+            Controls.Add(panelfuji);
             Name = "FormInicio";
             Text = "FormInicio";
             Load += FormInicio_Load;
-            materialCard1.ResumeLayout(false);
+            panelfuji.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            materialCard2.ResumeLayout(false);
+            panelAmgkor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             materialCard3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -211,10 +211,10 @@
 
         #endregion
 
-        private ReaLTaiizor.Controls.MaterialCard materialCard1;
+        private ReaLTaiizor.Controls.MaterialCard panelfuji;
         private Label lbl;
         private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.MaterialCard materialCard2;
+        private ReaLTaiizor.Controls.MaterialCard panelAmgkor;
         private Label label1;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MaterialCard materialCard3;
