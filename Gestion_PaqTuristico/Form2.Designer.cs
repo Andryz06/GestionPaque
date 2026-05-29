@@ -39,7 +39,7 @@
             pictureBox2 = new PictureBox();
             btnInicio = new ReaLTaiizor.Controls.PoisonButton();
             nightLinkLabel1 = new ReaLTaiizor.Controls.NightLinkLabel();
-            poisonButton1 = new ReaLTaiizor.Controls.PoisonButton();
+            btnConfiguracion = new ReaLTaiizor.Controls.PoisonButton();
             btnInformes = new ReaLTaiizor.Controls.PoisonButton();
             btnClientes = new ReaLTaiizor.Controls.PoisonButton();
             btnReservas = new ReaLTaiizor.Controls.PoisonButton();
@@ -70,7 +70,7 @@
             panelOpciones.Controls.Add(pictureBox2);
             panelOpciones.Controls.Add(btnInicio);
             panelOpciones.Controls.Add(nightLinkLabel1);
-            panelOpciones.Controls.Add(poisonButton1);
+            panelOpciones.Controls.Add(btnConfiguracion);
             panelOpciones.Controls.Add(btnInformes);
             panelOpciones.Controls.Add(btnClientes);
             panelOpciones.Controls.Add(btnReservas);
@@ -92,7 +92,7 @@
             lblNombreUsuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblNombreUsuario.AutoSize = true;
             lblNombreUsuario.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNombreUsuario.Location = new Point(59, 521);
+            lblNombreUsuario.Location = new Point(56, 536);
             lblNombreUsuario.Name = "lblNombreUsuario";
             lblNombreUsuario.Size = new Size(111, 20);
             lblNombreUsuario.TabIndex = 15;
@@ -101,7 +101,7 @@
             // pictureBox8
             // 
             pictureBox8.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pictureBox8.BackgroundImage = Properties.Resources.link;
+            pictureBox8.BackgroundImage = Properties.Resources.perfil;
             pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox8.Location = new Point(17, 521);
             pictureBox8.Name = "pictureBox8";
@@ -209,19 +209,20 @@
             nightLinkLabel1.VisitedLinkColor = Color.FromArgb(254, 89, 84);
             nightLinkLabel1.LinkClicked += nightLinkLabel1_LinkClicked;
             // 
-            // poisonButton1
+            // btnConfiguracion
             // 
-            poisonButton1.BackgroundImageLayout = ImageLayout.Zoom;
-            poisonButton1.FlatAppearance.BorderSize = 0;
-            poisonButton1.FlatStyle = FlatStyle.Flat;
-            poisonButton1.Location = new Point(0, 472);
-            poisonButton1.Name = "poisonButton1";
-            poisonButton1.Size = new Size(184, 43);
-            poisonButton1.TabIndex = 6;
-            poisonButton1.Text = "           CONFIGURACIÓN";
-            poisonButton1.UseCustomBackColor = true;
-            poisonButton1.UseCustomForeColor = true;
-            poisonButton1.UseSelectable = true;
+            btnConfiguracion.BackgroundImageLayout = ImageLayout.Zoom;
+            btnConfiguracion.FlatAppearance.BorderSize = 0;
+            btnConfiguracion.FlatStyle = FlatStyle.Flat;
+            btnConfiguracion.Location = new Point(0, 472);
+            btnConfiguracion.Name = "btnConfiguracion";
+            btnConfiguracion.Size = new Size(184, 43);
+            btnConfiguracion.TabIndex = 6;
+            btnConfiguracion.Text = "           CONFIGURACIÓN";
+            btnConfiguracion.UseCustomBackColor = true;
+            btnConfiguracion.UseCustomForeColor = true;
+            btnConfiguracion.UseSelectable = true;
+            btnConfiguracion.Click += poisonButton1_Click;
             // 
             // btnInformes
             // 
@@ -342,7 +343,7 @@
         private ReaLTaiizor.Controls.PoisonButton btnReservas;
         private ReaLTaiizor.Controls.PoisonButton btnInformes;
         private ReaLTaiizor.Controls.PoisonButton btnClientes;
-        private ReaLTaiizor.Controls.PoisonButton poisonButton1;
+        private ReaLTaiizor.Controls.PoisonButton btnConfiguracion;
         private ReaLTaiizor.Controls.NightLinkLabel nightLinkLabel1;
         private ReaLTaiizor.Controls.PoisonButton btnInicio;
         private PictureBox pictureBox2;

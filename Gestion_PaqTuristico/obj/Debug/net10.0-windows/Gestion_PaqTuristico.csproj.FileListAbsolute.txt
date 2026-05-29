@@ -65,3 +65,4 @@ C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\
 C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.PaquetesTuristicos.resources
 C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormClientes.resources
 C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormInformes.resources
+C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormConfiguracion.resources

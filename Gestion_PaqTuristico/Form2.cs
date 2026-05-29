@@ -54,26 +54,32 @@ namespace Gestion_PaqTuristico
 
         private void FormMenuAdmin_Load(object sender, EventArgs e)
         {
-            // Abrimos el Inicio por defecto apenas carga el menú
             AbrirFormEnPanel(new FormInicio());
 
-            //Si el que entra es un Cliente, le encondemos los botones de admi
+            // Si el que entra es un Cliente, le escondemos los botones de admi
             if (RolActivo == "Cliente")
             {
-                btnPaquetes.Visible = false; //se esconde el crud de paquetes
-                btnClientes.Visible = false; //Se esconde la gestion de clientes
+                btnPaquetes.Visible = false; // se esconde el crud de paquetes
+                btnClientes.Visible = false; // Se esconde la gestion de clientes
                 btnInformes.Visible = false;
                 picPaquete.Visible = false;
                 picClientes.Visible = false;
                 picInformes.Visible = false;
 
-                //Deja visible los demas botones
-
+                // Deja visible los demas botones
                 lblNombreUsuario.Text = "Modo Cliente";
             }
-            else if (RolActivo == "Admin" || RolActivo == "Empleado")
+            else if (RolActivo == "Empleado")
             {
-                //SI es Adm, Todo se queda visible
+                // Si es Empleado, le escondemos SOLO los informes
+                btnInformes.Visible = false;
+                picInformes.Visible = false;
+
+                lblNombreUsuario.Text = "Modo Empleado";
+            }
+            else if (RolActivo == "Admin")
+            {
+                // SI es Adm, Todo se queda visible
                 lblNombreUsuario.Text = "Admin: Jeremy";
             }
         }
@@ -125,6 +131,12 @@ namespace Gestion_PaqTuristico
         private void btnInformes_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new FormInformes());
+        }
+
+        //Este es el boton de configuracion
+        private void poisonButton1_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormConfiguracion(IdUsuarioActivo, RolActivo));
         }
     }
 }

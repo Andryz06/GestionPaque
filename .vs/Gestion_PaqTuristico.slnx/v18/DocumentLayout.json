@@ -3,56 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\formconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\formconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\formconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\formconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\gestion_paqturistico\\formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\gestion_paqturistico\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\paquetesturisticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\paquetesturisticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\gestion_paqturistico\\crearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\crearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\gestion_paqturistico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|c:\\users\\andyz\\source\\repos\\gestion_paqturistico\\gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA516291-51C6-485C-6F70-5408F52F4906}|Gestion_PaqTuristico\\Gestion_PaqTuristico.csproj|solutionrelative:gestion_paqturistico\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,95 +42,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormClientes.cs",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormClientes.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormClientes.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormClientes.cs",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormClientes.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAAwJAAAABXAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PaquetesTuristicos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\PaquetesTuristicos.cs",
+              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\PaquetesTuristicos.cs",
+              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\PaquetesTuristicos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_PaqTuristico\\PaquetesTuristicos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T04:25:41.074Z",
+              "WhenOpened": "2026-05-29T23:23:43.946Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormConfiguracion.cs",
+              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormConfiguracion.cs",
+              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormConfiguracion.cs",
+              "RelativeToolTip": "Gestion_PaqTuristico\\FormConfiguracion.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwHcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T21:44:14.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormClientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormClientes.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormClientes.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormClientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormClientes.cs [Dise\u00F1o]",
+              "Title": "FormConfiguracion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormConfiguracion.cs",
+              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormConfiguracion.cs",
+              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormConfiguracion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_PaqTuristico\\FormConfiguracion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T04:25:15.957Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormInformes.cs",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInformes.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormInformes.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInformes.cs",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormInformes.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAcwN0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T03:42:52.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormInformes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInformes.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormInformes.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInformes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormInformes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T02:51:42.436Z",
+              "WhenOpened": "2026-05-29T20:57:13.625Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\Form2.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs",
-              "RelativeToolTip": "Gestion_PaqTuristico\\Form2.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAH4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T03:31:39.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormReservas.cs",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormReservas.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormReservas.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormReservas.cs",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormReservas.cs",
-              "ViewState": "AgIAAMcBAAAAAAAAAAAQwOABAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T22:34:41.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\Form2.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_PaqTuristico\\Form2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T03:31:12.391Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "FormReservas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormReservas.cs",
               "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormReservas.cs",
@@ -170,65 +91,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormInicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInicio.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormInicio.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormInicio.cs [Dise\u00F1o]",
+              "DocumentIndex": 5,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs",
+              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\Form2.cs",
+              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs",
+              "RelativeToolTip": "Gestion_PaqTuristico\\Form2.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwDgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T02:14:56.725Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormInicio.cs",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInicio.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\FormInicio.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\FormInicio.cs",
-              "RelativeToolTip": "Gestion_PaqTuristico\\FormInicio.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAowFoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T03:42:54.905Z",
+              "WhenOpened": "2026-05-29T22:42:36.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form1.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\Form1.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_PaqTuristico\\Form1.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs",
+              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\Form2.cs",
+              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_PaqTuristico\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T19:19:42.254Z",
+              "WhenOpened": "2026-05-27T03:31:12.391Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CrearUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\CrearUsuario.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\CrearUsuario.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\CrearUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_PaqTuristico\\CrearUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T00:05:34.405Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form1.cs",
-              "RelativeDocumentMoniker": "Gestion_PaqTuristico\\Form1.cs",
-              "ToolTip": "C:\\Users\\Andyz\\source\\repos\\Gestion_PaqTuristico\\Gestion_PaqTuristico\\Form1.cs",
-              "RelativeToolTip": "Gestion_PaqTuristico\\Form1.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwHIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T19:22:35.687Z",
-              "EditorCaption": ""
             }
           ]
         }

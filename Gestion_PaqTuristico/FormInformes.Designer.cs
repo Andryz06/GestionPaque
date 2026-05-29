@@ -30,10 +30,13 @@
         {
             label1 = new Label();
             materialCard1 = new ReaLTaiizor.Controls.MaterialCard();
+            lblTituloDe = new Label();
             lblDestinoEstrella = new Label();
             materialCard2 = new ReaLTaiizor.Controls.MaterialCard();
+            lblClientes = new Label();
             lblTotalClientes = new Label();
             materialCard3 = new ReaLTaiizor.Controls.MaterialCard();
+            lblTituloRe = new Label();
             lblTotalReservas = new Label();
             dgvTopClientes = new DataGridView();
             materialCard4 = new ReaLTaiizor.Controls.MaterialCard();
@@ -68,6 +71,7 @@
             // materialCard1
             // 
             materialCard1.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard1.Controls.Add(lblTituloDe);
             materialCard1.Controls.Add(lblDestinoEstrella);
             materialCard1.Depth = 0;
             materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
@@ -79,18 +83,30 @@
             materialCard1.Size = new Size(227, 165);
             materialCard1.TabIndex = 1;
             // 
+            // lblTituloDe
+            // 
+            lblTituloDe.AutoSize = true;
+            lblTituloDe.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTituloDe.Location = new Point(42, 14);
+            lblTituloDe.Name = "lblTituloDe";
+            lblTituloDe.Size = new Size(140, 20);
+            lblTituloDe.TabIndex = 2;
+            lblTituloDe.Text = "DESTINO ESTRELLA";
+            // 
             // lblDestinoEstrella
             // 
             lblDestinoEstrella.AutoSize = true;
-            lblDestinoEstrella.Location = new Point(86, 25);
+            lblDestinoEstrella.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDestinoEstrella.Location = new Point(0, 74);
             lblDestinoEstrella.Name = "lblDestinoEstrella";
-            lblDestinoEstrella.Size = new Size(38, 15);
+            lblDestinoEstrella.Size = new Size(100, 40);
             lblDestinoEstrella.TabIndex = 1;
             lblDestinoEstrella.Text = "label2";
             // 
             // materialCard2
             // 
             materialCard2.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard2.Controls.Add(lblClientes);
             materialCard2.Controls.Add(lblTotalClientes);
             materialCard2.Depth = 0;
             materialCard2.ForeColor = Color.FromArgb(222, 0, 0, 0);
@@ -102,18 +118,30 @@
             materialCard2.Size = new Size(227, 165);
             materialCard2.TabIndex = 2;
             // 
+            // lblClientes
+            // 
+            lblClientes.AutoSize = true;
+            lblClientes.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblClientes.Location = new Point(53, 14);
+            lblClientes.Name = "lblClientes";
+            lblClientes.Size = new Size(118, 20);
+            lblClientes.TabIndex = 1;
+            lblClientes.Text = "TOTAL CLIENTES";
+            // 
             // lblTotalClientes
             // 
             lblTotalClientes.AutoSize = true;
-            lblTotalClientes.Location = new Point(95, 25);
+            lblTotalClientes.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalClientes.Location = new Point(82, 54);
             lblTotalClientes.Name = "lblTotalClientes";
-            lblTotalClientes.Size = new Size(38, 15);
+            lblTotalClientes.Size = new Size(166, 65);
             lblTotalClientes.TabIndex = 0;
             lblTotalClientes.Text = "label2";
             // 
             // materialCard3
             // 
             materialCard3.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard3.Controls.Add(lblTituloRe);
             materialCard3.Controls.Add(lblTotalReservas);
             materialCard3.Depth = 0;
             materialCard3.ForeColor = Color.FromArgb(222, 0, 0, 0);
@@ -125,12 +153,23 @@
             materialCard3.Size = new Size(227, 165);
             materialCard3.TabIndex = 3;
             // 
+            // lblTituloRe
+            // 
+            lblTituloRe.AutoSize = true;
+            lblTituloRe.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTituloRe.Location = new Point(58, 14);
+            lblTituloRe.Name = "lblTituloRe";
+            lblTituloRe.Size = new Size(123, 20);
+            lblTituloRe.TabIndex = 2;
+            lblTituloRe.Text = "TOTAL RESERVAS";
+            // 
             // lblTotalReservas
             // 
             lblTotalReservas.AutoSize = true;
-            lblTotalReservas.Location = new Point(96, 25);
+            lblTotalReservas.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalReservas.Location = new Point(81, 49);
             lblTotalReservas.Name = "lblTotalReservas";
-            lblTotalReservas.Size = new Size(38, 15);
+            lblTotalReservas.Size = new Size(166, 65);
             lblTotalReservas.TabIndex = 1;
             lblTotalReservas.Text = "label2";
             // 
@@ -302,5 +341,8 @@
         private ProgressBar pbTop2;
         private ProgressBar pbTop1;
         private Button btnExportar;
+        private Label lblTituloDe;
+        private Label lblClientes;
+        private Label lblTituloRe;
     }
 }

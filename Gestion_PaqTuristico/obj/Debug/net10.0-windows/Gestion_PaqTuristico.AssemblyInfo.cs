@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gestion_PaqTuristico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d87b37f0a8b4da725ded59b00c7e2138a31ba547")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cccfc5055aab32afaa832eb10aaa1be3a41eb59c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gestion_PaqTuristico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gestion_PaqTuristico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

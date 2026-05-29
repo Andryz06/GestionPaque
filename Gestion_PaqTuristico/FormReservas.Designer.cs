@@ -155,18 +155,18 @@
             // 
             // lblPromociones
             // 
-            lblPromociones.AutoSize = true;
             lblPromociones.Location = new Point(18, 342);
+            lblPromociones.MaximumSize = new Size(200, 0);
             lblPromociones.Name = "lblPromociones";
-            lblPromociones.Size = new Size(0, 15);
+            lblPromociones.Size = new Size(0, 0);
             lblPromociones.TabIndex = 3;
             // 
             // lblDescripcion
             // 
-            lblDescripcion.AutoSize = true;
             lblDescripcion.Location = new Point(18, 315);
+            lblDescripcion.MaximumSize = new Size(200, 0);
             lblDescripcion.Name = "lblDescripcion";
-            lblDescripcion.Size = new Size(0, 15);
+            lblDescripcion.Size = new Size(0, 0);
             lblDescripcion.TabIndex = 2;
             // 
             // lblTituloDestino
@@ -226,6 +226,7 @@
             // 
             // txtBuscar
             // 
+            txtBuscar.BackColor = Color.LightBlue;
             txtBuscar.Location = new Point(23, 84);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new Size(389, 23);
