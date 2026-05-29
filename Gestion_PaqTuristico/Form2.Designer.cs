@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panelOpciones = new ReaLTaiizor.Controls.MaterialCard();
-            label1 = new Label();
+            lblNombreUsuario = new Label();
             pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            picInformes = new PictureBox();
+            picClientes = new PictureBox();
             pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
+            picPaquete = new PictureBox();
             pictureBox2 = new PictureBox();
             btnInicio = new ReaLTaiizor.Controls.PoisonButton();
             nightLinkLabel1 = new ReaLTaiizor.Controls.NightLinkLabel();
@@ -49,10 +49,10 @@
             panelOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picInformes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picClientes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picPaquete).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -60,13 +60,13 @@
             // panelOpciones
             // 
             panelOpciones.BackColor = Color.FromArgb(255, 255, 255);
-            panelOpciones.Controls.Add(label1);
+            panelOpciones.Controls.Add(lblNombreUsuario);
             panelOpciones.Controls.Add(pictureBox8);
             panelOpciones.Controls.Add(pictureBox7);
-            panelOpciones.Controls.Add(pictureBox6);
-            panelOpciones.Controls.Add(pictureBox5);
+            panelOpciones.Controls.Add(picInformes);
+            panelOpciones.Controls.Add(picClientes);
             panelOpciones.Controls.Add(pictureBox4);
-            panelOpciones.Controls.Add(pictureBox3);
+            panelOpciones.Controls.Add(picPaquete);
             panelOpciones.Controls.Add(pictureBox2);
             panelOpciones.Controls.Add(btnInicio);
             panelOpciones.Controls.Add(nightLinkLabel1);
@@ -85,17 +85,18 @@
             panelOpciones.Padding = new Padding(14);
             panelOpciones.Size = new Size(184, 645);
             panelOpciones.TabIndex = 0;
+            panelOpciones.Paint += panelOpciones_Paint;
             // 
-            // label1
+            // lblNombreUsuario
             // 
-            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(59, 521);
-            label1.Name = "label1";
-            label1.Size = new Size(111, 20);
-            label1.TabIndex = 15;
-            label1.Text = "Admin: Jeremy";
+            lblNombreUsuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblNombreUsuario.AutoSize = true;
+            lblNombreUsuario.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNombreUsuario.Location = new Point(59, 521);
+            lblNombreUsuario.Name = "lblNombreUsuario";
+            lblNombreUsuario.Size = new Size(111, 20);
+            lblNombreUsuario.TabIndex = 15;
+            lblNombreUsuario.Text = "Admin: Jeremy";
             // 
             // pictureBox8
             // 
@@ -110,59 +111,65 @@
             // 
             // pictureBox7
             // 
+            pictureBox7.BackColor = Color.Transparent;
             pictureBox7.BackgroundImage = Properties.Resources.configuraciones;
             pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(17, 394);
+            pictureBox7.Location = new Point(17, 472);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(39, 36);
             pictureBox7.TabIndex = 13;
             pictureBox7.TabStop = false;
             // 
-            // pictureBox6
+            // picInformes
             // 
-            pictureBox6.BackgroundImage = Properties.Resources.reporte;
-            pictureBox6.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox6.Location = new Point(17, 345);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(39, 36);
-            pictureBox6.TabIndex = 12;
-            pictureBox6.TabStop = false;
+            picInformes.BackColor = Color.Transparent;
+            picInformes.BackgroundImage = Properties.Resources.reporte;
+            picInformes.BackgroundImageLayout = ImageLayout.Zoom;
+            picInformes.Location = new Point(17, 345);
+            picInformes.Name = "picInformes";
+            picInformes.Size = new Size(39, 43);
+            picInformes.TabIndex = 12;
+            picInformes.TabStop = false;
             // 
-            // pictureBox5
+            // picClientes
             // 
-            pictureBox5.BackgroundImage = Properties.Resources.cliente;
-            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(17, 296);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(39, 36);
-            pictureBox5.TabIndex = 11;
-            pictureBox5.TabStop = false;
+            picClientes.BackColor = Color.Transparent;
+            picClientes.BackgroundImage = Properties.Resources.cliente;
+            picClientes.BackgroundImageLayout = ImageLayout.Zoom;
+            picClientes.Location = new Point(17, 303);
+            picClientes.Name = "picClientes";
+            picClientes.Size = new Size(39, 36);
+            picClientes.TabIndex = 11;
+            picClientes.TabStop = false;
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = Properties.Resources.calendario;
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(17, 247);
+            pictureBox4.Location = new Point(17, 205);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(39, 36);
             pictureBox4.TabIndex = 10;
             pictureBox4.TabStop = false;
             // 
-            // pictureBox3
+            // picPaquete
             // 
-            pictureBox3.BackgroundImage = Properties.Resources.mapa;
-            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(17, 198);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(39, 36);
-            pictureBox3.TabIndex = 9;
-            pictureBox3.TabStop = false;
+            picPaquete.BackColor = Color.Transparent;
+            picPaquete.BackgroundImage = Properties.Resources.mapa;
+            picPaquete.BackgroundImageLayout = ImageLayout.Zoom;
+            picPaquete.Location = new Point(17, 247);
+            picPaquete.Name = "picPaquete";
+            picPaquete.Size = new Size(39, 36);
+            picPaquete.TabIndex = 9;
+            picPaquete.TabStop = false;
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources.inicio;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(17, 149);
+            pictureBox2.Location = new Point(17, 156);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(39, 36);
             pictureBox2.TabIndex = 4;
@@ -207,7 +214,7 @@
             poisonButton1.BackgroundImageLayout = ImageLayout.Zoom;
             poisonButton1.FlatAppearance.BorderSize = 0;
             poisonButton1.FlatStyle = FlatStyle.Flat;
-            poisonButton1.Location = new Point(0, 394);
+            poisonButton1.Location = new Point(0, 472);
             poisonButton1.Name = "poisonButton1";
             poisonButton1.Size = new Size(184, 43);
             poisonButton1.TabIndex = 6;
@@ -229,6 +236,7 @@
             btnInformes.UseCustomBackColor = true;
             btnInformes.UseCustomForeColor = true;
             btnInformes.UseSelectable = true;
+            btnInformes.Click += btnInformes_Click;
             // 
             // btnClientes
             // 
@@ -243,13 +251,14 @@
             btnClientes.UseCustomBackColor = true;
             btnClientes.UseCustomForeColor = true;
             btnClientes.UseSelectable = true;
+            btnClientes.Click += btnClientes_Click;
             // 
             // btnReservas
             // 
             btnReservas.BackgroundImageLayout = ImageLayout.Zoom;
             btnReservas.FlatAppearance.BorderSize = 0;
             btnReservas.FlatStyle = FlatStyle.Flat;
-            btnReservas.Location = new Point(0, 247);
+            btnReservas.Location = new Point(0, 198);
             btnReservas.Name = "btnReservas";
             btnReservas.Size = new Size(184, 43);
             btnReservas.TabIndex = 3;
@@ -257,13 +266,15 @@
             btnReservas.UseCustomBackColor = true;
             btnReservas.UseCustomForeColor = true;
             btnReservas.UseSelectable = true;
+            btnReservas.Click += btnReservas_Click;
             // 
             // btnPaquetes
             // 
             btnPaquetes.BackgroundImageLayout = ImageLayout.Zoom;
             btnPaquetes.FlatAppearance.BorderSize = 0;
             btnPaquetes.FlatStyle = FlatStyle.Flat;
-            btnPaquetes.Location = new Point(0, 198);
+            btnPaquetes.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPaquetes.Location = new Point(0, 240);
             btnPaquetes.Name = "btnPaquetes";
             btnPaquetes.Size = new Size(184, 43);
             btnPaquetes.TabIndex = 2;
@@ -271,12 +282,13 @@
             btnPaquetes.UseCustomBackColor = true;
             btnPaquetes.UseCustomForeColor = true;
             btnPaquetes.UseSelectable = true;
+            btnPaquetes.Click += btnPaquetes_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.logo;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(-21, 10);
+            pictureBox1.Location = new Point(-21, 17);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(231, 124);
             pictureBox1.TabIndex = 0;
@@ -312,10 +324,10 @@
             panelOpciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picInformes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picClientes).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picPaquete).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -335,11 +347,11 @@
         private ReaLTaiizor.Controls.PoisonButton btnInicio;
         private PictureBox pictureBox2;
         private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
+        private PictureBox picInformes;
+        private PictureBox picClientes;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private Label label1;
+        private PictureBox picPaquete;
+        private Label lblNombreUsuario;
         private PictureBox pictureBox8;
     }
 }

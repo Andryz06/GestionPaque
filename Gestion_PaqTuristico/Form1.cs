@@ -73,8 +73,8 @@ namespace Gestion_PaqTuristico
                         {
                             if (chkRecordarme.Checked == true) //Aqui va la funcion del check para recordar al usuari
                             {
-                                Properties.Settings.Default.CorreoGuardado = "";
-                                Properties.Settings.Default.RecordarCheck = false;
+                                Properties.Settings.Default.CorreoGuardado = txtUsuario.Text;
+                                Properties.Settings.Default.RecordarCheck = true;
                             }
                             else
                             {
@@ -83,19 +83,31 @@ namespace Gestion_PaqTuristico
                             }
                             Properties.Settings.Default.Save();
 
+                            //Roles se obtine el rol y el id de la base de datos
                             string rolUSuario = lector["Rol"].ToString();
+                            int idUsuario = Convert.ToInt32(lector["IdUsuario"]);
 
-                            if (rolUSuario == "Empleado")
+                            //Abrimos el mismo menu para todos pero le pasamos los datos
+
+                            FormMenuAdmin menuPrincipal = new FormMenuAdmin(rolUSuario, idUsuario);
+                            menuPrincipal.Show();
+
+
+                            // 3. Saludo según la jerarquía (sin volver a abrir ventanas)
+                            if (rolUSuario == "Admin")
                             {
-                                FormMenuAdmin menuAdmin = new FormMenuAdmin();
-                                menuAdmin.Show();
-                                MessageBox.Show("¡Bienvenido Administrador!");
+                                MessageBox.Show("¡Bienvenido de vuelta, Administrador! Sistemas listos.", "Acceso Root");
+                            }
+                            else if (rolUSuario == "Empleado")
+                            {
+                                MessageBox.Show("¡Bienvenido! Que tengas un excelente turno de trabajo.", "Acceso de Empleado");
                             }
                             else if (rolUSuario == "Cliente")
                             {
-                                MessageBox.Show("¡Bienvenido a Tour Hyrule!");
+                                MessageBox.Show("¡Bienvenido a Tour Hyrule! Prepara tu próxima aventura.", "Acceso de Cliente");
                             }
-                            this.Hide(); //ocultar el formulario actual sin cerrarlo
+
+                            this.Hide(); // ocultar el formulario de login actual sin cerrarlo
                         }
                         else
                         {

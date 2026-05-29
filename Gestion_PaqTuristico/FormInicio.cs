@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
+using System.IO;
+using Microsoft.Data.SqlClient;
+using System.Drawing;
 
 namespace Gestion_PaqTuristico
 {
@@ -27,69 +31,149 @@ namespace Gestion_PaqTuristico
             }
         }
 
-        private void lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        private string cadenaConexion = @"Server=(localdb)\Jeremy; Database=TourHyruleDB; Trusted_Connection=True;";
         private void FormInicio_Load(object sender, EventArgs e)
         {
-
+            CargarPaquetesRecientes();
         }
 
         private void Aventuras_Click(object sender, EventArgs e)
         {
-            //Averiguar que panel se presono o que control dentro del panel
             Control presionado = sender as Control;
+            if (!(presionado is Panel)) presionado = presionado.Parent;
 
-            //Si presiona la foto o el texto, se necesita que busque el papá que es el panel
+            //Se revisa el tag oculto si esta vacio no hace nada
 
-            if (!(presionado is Panel))
-            {
-                presionado = presionado.Parent;
-            }
+            if (presionado.Tag == null)
+                return;
 
-            //Identificar el lugar usar el nombre del panel
-            string lugar = presionado.Name;
+            int idPaqueteReal = Convert.ToInt32(presionado.Tag);
 
-            //Perpar las variables vacias
-
+            string lugar = "";
             string descripcion = "";
-            string promociones = "";
+            Image fotoActual = null;
+            string promociones = "Reserva este paquete ahora";
 
-            Image fotoActual = ((PictureBox)presionado.Controls[0]).Image;
-
-            //  LA BASE DE DATOS FAKE (Para la demo)
-            // Aquí es donde en el futuro consultarás SQL. Por ahora, usaremos un Switch.
-            switch (lugar)
+            string query = "SELECT NombrePaquete, Destino, Descripcion, Imagen FROM Paquetes WHERE IdPaquete = @Id";
+            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
             {
-                case "panelFuji": // Asegúrate de que este sea el NOMBRE de tu panel en las propiedades
-                    lugar = "Aventura en el Monte Fuji, Japón";
-                    descripcion = "Experimenta la majestuosidad del pico más alto de Japón. Incluye transporte desde Tokio, guía bilingüe, equipo de senderismo básico y hospedaje en Ryokan tradicional.";
-                    promociones = "💰 PROMO: ¡20% de descuento si reservas antes del verano! 💰";
-                    break;
+                SqlCommand comando = new SqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@Id", idPaqueteReal);
 
-                case "panelAngkor": // Nombre de tu segundo panel
-                    lugar = "Angkor Wat - Camboya";
-                    descripcion = "Descubre los secretos de la antigua civilización Jemer en el complejo religioso más grande del mundo. Tour al amanecer incluido.";
-                    promociones = "PROMO: ¡Tercera noche gratis en hotel 5 estrellas! 🎁";
-                    break;
-                    // ... Agrega los otros casos para Lisboa y Guanajuato ...
+                conexion.Open();
+                SqlDataReader reader = comando.ExecuteReader();
 
-                    // INSTANCIAR LA NUEVA VENTANA Y PASARLE DATOS
-                    FormReservas frmR = new FormReservas();
-                    frmR.CargarDatosDelLugar(lugar, descripcion, fotoActual, promociones);
+                if (reader.Read())
+                {
+                    lugar = reader["NombrePaquete"].ToString() + " - " + reader["Destino"].ToString();
+                    descripcion = reader["Descripcion"].ToString();
+                    byte[] imgBytes = reader["Imagen"] as byte[];
 
-                    var menuPrincipal = Application.OpenForms.OfType<FormMenuAdmin>().FirstOrDefault();
-
-                    if (menuPrincipal != null)
-                    {
-                        menuPrincipal.AbrirFormEnPanel(frmR);
+                    if ((imgBytes !=null))
+                    { 
+                    using (MemoryStream ms = new MemoryStream(imgBytes))
+                        {
+                            fotoActual = Image.FromStream(ms);
+                        }
                     }
-                    else
+                }
+            }
+            // INSTANCIAR LA NUEVA VENTANA Y PASARLE DATOS REALES
+            FormReservas frmR = new FormReservas();
+            frmR.CargarDatosDelLugar(lugar, descripcion, fotoActual, promociones);
+
+            // Código para abrirlo en el menú principal
+            FormMenuAdmin menuPrincipal = Application.OpenForms.OfType<FormMenuAdmin>().FirstOrDefault();
+            if (menuPrincipal != null)
+            {
+                // =========================================================
+                // EL PUENTE  DE SEGURIDAD! 
+                // agarramos el Rol y el ID del Menú Principal y los inyectamos
+                // =========================================================
+                frmR.ConfigurarSeguridad(menuPrincipal.RolActivo, menuPrincipal.IdUsuarioActivo);
+
+                // Obligamos a la tabla a seleccionar este viaje específico
+                frmR.SeleccionarPaquetesDesdeInicio(idPaqueteReal);
+
+                // Y finalmente abrimos la ventana blindada en el panel
+                menuPrincipal.AbrirFormEnPanel(frmR);
+            }
+        }
+        private void Tarjeta_MouseEnter(object sender, EventArgs e)
+        {
+            Control c = sender as Control;
+            if (!(c is Panel)) c = c.Parent;
+
+            c.BackColor = Color.LightSkyBlue; // Color azul clarito al poner el mouse
+        }
+
+        private void Tarjeta_MouseLeave(object sender, EventArgs e)
+        {
+            Control c = sender as Control;
+            if (!(c is Panel)) c = c.Parent;
+
+            c.BackColor = Color.White; // Regresa al color original al quitar el mouse
+        }
+        //=======================================================================
+        private void CargarPaquetesRecientes()
+        {
+            // 1. Ponemos tus 4 paneles actuales en una lista (Asegúrate de que los nombres coincidan con tu diseño)
+            Panel[] paneles = { panelfuji, panelAngkor, panelLisboa, panelGuanajuato };
+            int indice = 0;
+
+            // 2. Traemos los 4 paquetes más nuevos de la BD
+            string query = "SELECT TOP 4 IdPaquete, NombrePaquete, Destino, Descripcion, Imagen FROM Paquetes ORDER BY IdPaquete DESC";
+
+            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            {
+                SqlCommand comando = new SqlCommand(query, conexion);
+                try
+                {
+                    conexion.Open();
+                    SqlDataReader reader = comando.ExecuteReader();
+
+                    while (reader.Read() && indice < paneles.Length)
                     {
-                        MessageBox.Show("No se encontró el menú principal abierto. Asegúrate de ponerle el nombre correcto en el código.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        Panel pActual = paneles[indice];
+
+                        // TRUCO PRO: Guardamos el ID de la base de datos escondido en la propiedad Tag del panel
+                        pActual.Tag = reader["IdPaquete"].ToString();
+
+                        string titulo = reader["NombrePaquete"].ToString();
+                        string desc = reader["Descripcion"].ToString();
+                        byte[] imgBytes = reader["Imagen"] as byte[];
+
+                        // Buscamos la foto y el texto adentro de tu panel y los sobreescribimos
+                        foreach (Control c in pActual.Controls)
+                        {
+                            if (c is PictureBox pic && imgBytes != null)
+                            {
+                                using (MemoryStream ms = new MemoryStream(imgBytes))
+                                {
+                                    pic.Image = Image.FromStream(ms);
+                                }
+                            }
+                            else if (c is Label lbl)
+                            {
+                                // Le ponemos el nombre y la descripción real de la base de datos
+                                lbl.Text = titulo + "\n" + desc;
+                            }
+                        }
+
+                        pActual.Visible = true; // Lo mostramos
+                        indice++;
                     }
+
+                    // Si tienes menos de 4 paquetes creados en tu sistema, ocultamos los cuadros vacíos que sobren
+                    for (int i = indice; i < paneles.Length; i++)
+                    {
+                        paneles[i].Visible = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al cargar el inicio: " + ex.Message);
+                }
             }
         }
     }

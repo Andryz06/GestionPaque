@@ -83,6 +83,26 @@ namespace Gestion_PaqTuristico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boletos_de_avion {
+            get {
+                object obj = ResourceManager.GetObject("boletos-de-avion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap busqueda_de_lupa {
+            get {
+                object obj = ResourceManager.GetObject("busqueda-de-lupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendario {
             get {
                 object obj = ResourceManager.GetObject("calendario", resourceCulture);
@@ -126,6 +146,16 @@ namespace Gestion_PaqTuristico.Properties {
         internal static System.Drawing.Bitmap correo {
             get {
                 object obj = ResourceManager.GetObject("correo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap despegue_del_avion {
+            get {
+                object obj = ResourceManager.GetObject("despegue-del-avion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

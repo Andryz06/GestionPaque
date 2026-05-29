@@ -60,3 +60,8 @@ C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\bin\Debug\
 C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormCrearUsuario.resources
 C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormElegirPerfil.resources
 C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormInicio.resources
+C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormReservas.resources
+C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.sourcelink.json
+C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.PaquetesTuristicos.resources
+C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormClientes.resources
+C:\Users\Andyz\source\repos\Gestion_PaqTuristico\Gestion_PaqTuristico\obj\Debug\net10.0-windows\Gestion_PaqTuristico.FormInformes.resources

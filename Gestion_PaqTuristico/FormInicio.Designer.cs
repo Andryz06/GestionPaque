@@ -31,22 +31,22 @@
             panelfuji = new ReaLTaiizor.Controls.MaterialCard();
             lbl = new Label();
             pictureBox1 = new PictureBox();
-            panelAmgkor = new ReaLTaiizor.Controls.MaterialCard();
+            panelAngkor = new ReaLTaiizor.Controls.MaterialCard();
             label1 = new Label();
             pictureBox2 = new PictureBox();
-            materialCard3 = new ReaLTaiizor.Controls.MaterialCard();
+            panelLisboa = new ReaLTaiizor.Controls.MaterialCard();
             label2 = new Label();
             pictureBox3 = new PictureBox();
-            materialCard4 = new ReaLTaiizor.Controls.MaterialCard();
+            panelGuanajuato = new ReaLTaiizor.Controls.MaterialCard();
             label3 = new Label();
             pictureBox4 = new PictureBox();
             panelfuji.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panelAmgkor.SuspendLayout();
+            panelAngkor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            materialCard3.SuspendLayout();
+            panelLisboa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            materialCard4.SuspendLayout();
+            panelGuanajuato.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             panelfuji.Controls.Add(pictureBox1);
             panelfuji.Depth = 0;
             panelfuji.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            panelfuji.Location = new Point(103, 82);
+            panelfuji.Location = new Point(64, 140);
             panelfuji.Margin = new Padding(14);
             panelfuji.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             panelfuji.Name = "panelfuji";
@@ -65,6 +65,8 @@
             panelfuji.Size = new Size(177, 264);
             panelfuji.TabIndex = 0;
             panelfuji.Click += Aventuras_Click;
+            panelfuji.MouseEnter += Tarjeta_MouseEnter;
+            panelfuji.MouseLeave += Tarjeta_MouseLeave;
             // 
             // lbl
             // 
@@ -73,32 +75,39 @@
             lbl.Size = new Size(143, 100);
             lbl.TabIndex = 2;
             lbl.Text = "Monte Fuji - Japón Volcán\r\nicónico de Japón, \r\nrodeado de paisa jes naturales\r\n y considerado sagrado.";
-            lbl.Click += lbl_Click;
+            lbl.Click += Aventuras_Click;
+            lbl.MouseEnter += Tarjeta_MouseEnter;
+            lbl.MouseLeave += Tarjeta_MouseLeave;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.Fuji;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(17, 17);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(143, 134);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += Aventuras_Click;
+            pictureBox1.MouseEnter += Tarjeta_MouseEnter;
+            pictureBox1.MouseLeave += Tarjeta_MouseLeave;
             // 
-            // panelAmgkor
+            // panelAngkor
             // 
-            panelAmgkor.BackColor = Color.FromArgb(255, 255, 255);
-            panelAmgkor.Controls.Add(label1);
-            panelAmgkor.Controls.Add(pictureBox2);
-            panelAmgkor.Depth = 0;
-            panelAmgkor.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            panelAmgkor.Location = new Point(322, 82);
-            panelAmgkor.Margin = new Padding(14);
-            panelAmgkor.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            panelAmgkor.Name = "panelAmgkor";
-            panelAmgkor.Padding = new Padding(14);
-            panelAmgkor.Size = new Size(177, 264);
-            panelAmgkor.TabIndex = 1;
+            panelAngkor.BackColor = Color.FromArgb(255, 255, 255);
+            panelAngkor.Controls.Add(label1);
+            panelAngkor.Controls.Add(pictureBox2);
+            panelAngkor.Depth = 0;
+            panelAngkor.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            panelAngkor.Location = new Point(283, 140);
+            panelAngkor.Margin = new Padding(14);
+            panelAngkor.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            panelAngkor.Name = "panelAngkor";
+            panelAngkor.Padding = new Padding(14);
+            panelAngkor.Size = new Size(177, 264);
+            panelAngkor.TabIndex = 1;
+            panelAngkor.MouseEnter += Tarjeta_MouseEnter;
+            panelAngkor.MouseLeave += Tarjeta_MouseLeave;
             // 
             // label1
             // 
@@ -107,31 +116,33 @@
             label1.Size = new Size(143, 75);
             label1.TabIndex = 2;
             label1.Text = "Templos de Angkor, Camboya:\r\nConsiderados de los más\r\nfascinantes del planeta.";
+            label1.Click += Aventuras_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.BackgroundImage = Properties.Resources.Angkor;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Location = new Point(17, 17);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(143, 134);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += Aventuras_Click;
             // 
-            // materialCard3
+            // panelLisboa
             // 
-            materialCard3.BackColor = Color.FromArgb(255, 255, 255);
-            materialCard3.Controls.Add(label2);
-            materialCard3.Controls.Add(pictureBox3);
-            materialCard3.Depth = 0;
-            materialCard3.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard3.Location = new Point(540, 82);
-            materialCard3.Margin = new Padding(14);
-            materialCard3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialCard3.Name = "materialCard3";
-            materialCard3.Padding = new Padding(14);
-            materialCard3.Size = new Size(177, 264);
-            materialCard3.TabIndex = 2;
+            panelLisboa.BackColor = Color.FromArgb(255, 255, 255);
+            panelLisboa.Controls.Add(label2);
+            panelLisboa.Controls.Add(pictureBox3);
+            panelLisboa.Depth = 0;
+            panelLisboa.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            panelLisboa.Location = new Point(501, 140);
+            panelLisboa.Margin = new Padding(14);
+            panelLisboa.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            panelLisboa.Name = "panelLisboa";
+            panelLisboa.Padding = new Padding(14);
+            panelLisboa.Size = new Size(177, 264);
+            panelLisboa.TabIndex = 2;
             // 
             // label2
             // 
@@ -143,28 +154,28 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.BackgroundImage = Properties.Resources.lisboa;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Location = new Point(17, 17);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(143, 134);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
             // 
-            // materialCard4
+            // panelGuanajuato
             // 
-            materialCard4.BackColor = Color.FromArgb(255, 255, 255);
-            materialCard4.Controls.Add(label3);
-            materialCard4.Controls.Add(pictureBox4);
-            materialCard4.Depth = 0;
-            materialCard4.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard4.Location = new Point(756, 82);
-            materialCard4.Margin = new Padding(14);
-            materialCard4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialCard4.Name = "materialCard4";
-            materialCard4.Padding = new Padding(14);
-            materialCard4.Size = new Size(177, 264);
-            materialCard4.TabIndex = 3;
+            panelGuanajuato.BackColor = Color.FromArgb(255, 255, 255);
+            panelGuanajuato.Controls.Add(label3);
+            panelGuanajuato.Controls.Add(pictureBox4);
+            panelGuanajuato.Depth = 0;
+            panelGuanajuato.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            panelGuanajuato.Location = new Point(717, 140);
+            panelGuanajuato.Margin = new Padding(14);
+            panelGuanajuato.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            panelGuanajuato.Name = "panelGuanajuato";
+            panelGuanajuato.Padding = new Padding(14);
+            panelGuanajuato.Size = new Size(177, 264);
+            panelGuanajuato.TabIndex = 3;
             // 
             // label3
             // 
@@ -176,11 +187,11 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.BackgroundImage = Properties.Resources.Guanajuato;
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox4.Location = new Point(17, 17);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(143, 134);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
             // 
@@ -191,20 +202,20 @@
             BackgroundImage = Properties.Resources.fondo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(967, 606);
-            Controls.Add(materialCard4);
-            Controls.Add(materialCard3);
-            Controls.Add(panelAmgkor);
+            Controls.Add(panelGuanajuato);
+            Controls.Add(panelLisboa);
+            Controls.Add(panelAngkor);
             Controls.Add(panelfuji);
             Name = "FormInicio";
             Text = "FormInicio";
             Load += FormInicio_Load;
             panelfuji.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panelAmgkor.ResumeLayout(false);
+            panelAngkor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            materialCard3.ResumeLayout(false);
+            panelLisboa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            materialCard4.ResumeLayout(false);
+            panelGuanajuato.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
@@ -214,13 +225,13 @@
         private ReaLTaiizor.Controls.MaterialCard panelfuji;
         private Label lbl;
         private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.MaterialCard panelAmgkor;
+        private ReaLTaiizor.Controls.MaterialCard panelAngkor;
         private Label label1;
         private PictureBox pictureBox2;
-        private ReaLTaiizor.Controls.MaterialCard materialCard3;
+        private ReaLTaiizor.Controls.MaterialCard panelLisboa;
         private Label label2;
         private PictureBox pictureBox3;
-        private ReaLTaiizor.Controls.MaterialCard materialCard4;
+        private ReaLTaiizor.Controls.MaterialCard panelGuanajuato;
         private Label label3;
         private PictureBox pictureBox4;
     }

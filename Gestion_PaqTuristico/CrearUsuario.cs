@@ -39,38 +39,68 @@ namespace Gestion_PaqTuristico
 
             string conexionString = @"Server=(localdb)\Jeremy; Database=TourHyruleDB; Integrated Security=True;";
 
-            // El comando INSERT Verificar que los nombres de las columnas coincidan con la tabla en SQL
-            string query = "INSERT INTO Usuarios (Nombres, Apellidos, Telefono, Correo, Rol, Password) VALUES (@nombres, @apellidos, @telefono, @correo, @rol, @password)";
-
+            // 1. Modificamos el INSERT de Usuarios para atrapar el ID que genere la base de datos
+            string queryUsuario = "INSERT INTO Usuarios (Nombres, Apellidos, Telefono, Correo, Rol, Password) OUTPUT INSERTED.IdUsuario VALUES (@nombres, @apellidos, @telefono, @correo, @rol, @password)";
+            
             using (SqlConnection conexion = new SqlConnection(conexionString))
             {
-                using (SqlCommand comando = new SqlCommand(query, conexion))
                 {
-                    comando.Parameters.AddWithValue("@nombres", txtNombres.Text);
-                    comando.Parameters.AddWithValue("@apellidos", txtApellidos.Text);
-                    comando.Parameters.AddWithValue("@telefono", txtTelefono.Text);
-                    comando.Parameters.AddWithValue("@correo", txtCorreo.Text);
-                    comando.Parameters.AddWithValue("@rol", rolSeleccionado);
-                    comando.Parameters.AddWithValue("@password", txtContra.Text);
-
                     try
                     {
                         conexion.Open();
-                        int filasGuardadas = comando.ExecuteNonQuery();
 
-                        if (filasGuardadas > 0)
+                        //Usamos una Transaccion si fall lacreacion del cliente no se creara el usuario a medias
+                        using (SqlTransaction transaccion = conexion.BeginTransaction())
                         {
+                            int nuevoIdUsuario = 0;
+
+                            //Paso a  registrar en la tabla usario 
+                            using (SqlCommand comando = new SqlCommand(queryUsuario, conexion, transaccion))
+                            {
+                                comando.Parameters.AddWithValue("@nombres", txtNombres.Text);
+                                comando.Parameters.AddWithValue("@apellidos", txtApellidos.Text);
+                                comando.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                                comando.Parameters.AddWithValue("@correo", txtCorreo.Text);
+                                comando.Parameters.AddWithValue("@rol", rolSeleccionado);
+                                comando.Parameters.AddWithValue("@password", txtContra.Text);
+
+                                // ExecuteScalar ejecuta el comando y nos devuelve el IdUsuario recién generado
+                                nuevoIdUsuario = Convert.ToInt32(comando.ExecuteScalar());
+                            }
+                            //segundo paso si es cliente crear peril automatico en la tabla cliente
+                            if (rolSeleccionado == "Cliente")
+                            {
+                                string queryCliente = "INSERT INTO Clientes (IdUsuario, NombreCompleto, Telefono, Email, Nacionalidad) VALUES (@idUsuario, @nombreCompleto, @telefono, @email, 'Por Definir')";
+
+                                using (SqlCommand comandoCliente = new SqlCommand(queryCliente, conexion, transaccion))
+                                {
+                                    // Combinamos nombre y apellido para el perfil
+                                    string nombreCompleto = txtNombres.Text + " " + txtApellidos.Text;
+
+                                    comandoCliente.Parameters.AddWithValue("@idUsuario", nuevoIdUsuario); // El ID que capturamos arriba
+                                    comandoCliente.Parameters.AddWithValue("@nombreCompleto", nombreCompleto);
+                                    comandoCliente.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                                    comandoCliente.Parameters.AddWithValue("@email", txtCorreo.Text);
+
+                                    comandoCliente.ExecuteNonQuery();
+                                }
+                            }
+
+                            //si ambos insert se ejuctaron sin prblema confirmar cambios
+                            transaccion.Commit();
+
                             MessageBox.Show("Cuenta Creada con éxito, Ya puedes iniciar sesión", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            //Se rregresa al login
-                            FormLogin Login = new FormLogin();
-                            Login.Show();
+                            //Se regresa al login
+                            FormLogin login = new FormLogin();
+                            login.Show();
                             this.Close();
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error al guardar en la base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Si algo truena, revertimos todo para evitar datos basura corruptos
+                        MessageBox.Show("Error al guardar en la base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
